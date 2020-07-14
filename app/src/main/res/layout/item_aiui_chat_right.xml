@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="60dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#00000000">
+    <ImageView
+        android:id="@+id/imageview_head"
+        android:layout_width="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/icon_default_head"
+        android:layout_height="40dp" />
+    <com.a1anwang.ai_master.widget.ChatBubbleLayout
+        android:layout_toLeftOf="@+id/imageview_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bl_arrowHeight="14dp"
+        app:bl_arrowDirection="right"
+        app:bl_arrowPosition="13dp"
+        app:bl_cornersRadius="18dp"
+        app:bl_bubbleColor="#2ea2f5"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageview_voice"
+                android:layout_width="20dp"
+                android:src="@drawable/icon_voice"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:textColor="#555555"
+                android:textSize="16dp"
+                android:text="heheheda"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.a1anwang.ai_master.widget.ChatBubbleLayout>
+</RelativeLayout>

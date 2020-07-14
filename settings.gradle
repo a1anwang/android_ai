@@ -1,0 +1,1 @@
+include ':app', ':ai_lib', ':core', ':lib_xunfei', ':lib_baidu'

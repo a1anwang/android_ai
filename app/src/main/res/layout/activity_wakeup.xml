@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+        <RadioGroup
+            android:id="@+id/radiogroup_type"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="50dp">
+                <RadioButton
+                    android:id="@+id/radio_xunfei"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:text="讯飞"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio_baidu"
+                    android:layout_width="wrap_content"
+                    android:text="百度"
+                    android:layout_height="wrap_content" />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="开始"
+            android:onClick="startClick"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="停止"
+            android:onClick="stopClick"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请说出'小密小密'，'你好小密'来唤醒"
+            android:layout_height="wrap_content" />
+</LinearLayout>
